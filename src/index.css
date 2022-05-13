@@ -1,36 +1,43 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.bio{
-  background: rgb(63,94,251);
-  color: black;
+
+.dataContainer {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bio {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-
-.waveButton{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,153,135,0.21052170868347342) 35%, rgba(0,212,255,1) 100%);
- border-radius: 10px;
-  color: white;
-  padding: 25px 40px;
-
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+.waveButton {
+  pointer-events: auto;
   cursor: pointer;
-  border-radius: 5px;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border: none;
+  padding: 2.5rem 3rem;
+  margin: 2px;
+  width: 12vw;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+color: black;
+  display: inline-block;
 }
